@@ -24,8 +24,8 @@ erDiagram
         string name
         float price
     }
-    SERVICE -||{ ORDER_ITEM : "includes"
-    PART -||{ ORDER_ITEM : "includes"
+    SERVICE }|--|| ORDER_ITEM : "includes"
+    PART }|--|| ORDER_ITEM : "includes"
     ORDER_ITEM {
         string id
         integer quantity
